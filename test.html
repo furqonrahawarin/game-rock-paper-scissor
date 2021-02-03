@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 id="judul">Aplikasi sederhana</h1>
+
+    <button onclick="warna('red')">Ganti Warna BG</button>
+    <button onclick="font('green')"">Ganti Warna Font</button>
+
+    <script type="text/javascript">
+        function warna(color){
+            document.body.style.background = color;
+        }
+
+        function font(color){
+            document.getElementById('judul').style.color = color;
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,343 @@
+* {
+  padding: 0;
+  margin: 0;
+  font-family: 'Rubik', sans-serif !important;
+}
+
+body {
+  color: #fff;
+  background-color: black;
+}
+
+h1 {
+  font-family: 'Carter One', cursive !important;
+}
+
+h2 {
+  font-family: 'Carter One', cursive !important;
+}
+
+h3 {
+  font-family: 'Carter One', cursive !important;
+}
+
+/* HEADER */
+header.masthead {
+  width: 100%;
+  height: 100%;
+  padding-top: 11rem;
+  padding-bottom: 11rem;
+  text-align: center;
+  color: #fff;
+  background-image: url("/img/header-bg.png");
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  background-position: center center;
+  background-size: cover;
+}
+
+header.masthead .masthead-subheading {
+  font-size: 1.5rem;
+  font-style: italic;
+  line-height: 1.5rem;
+  margin-bottom: 25px;
+}
+
+header.masthead .masthead-heading {
+  font-size: 3.25rem;
+  font-weight: 700;
+  line-height: 3.25rem;
+  margin-bottom: 2rem;
+}
+
+.btn-xl {
+  padding: 1.25rem 2.5rem;
+  font-size: 1.125rem;
+  font-weight: 700;
+}
+
+@media (min-width: 768px) {
+  header.masthead {
+    padding-top: 16rem;
+    padding-bottom: 14rem;
+  }
+
+  header.masthead .masthead-subheading {
+    font-size: 2.25rem;
+    font-style: italic;
+    line-height: 2.25rem;
+    margin-bottom: 2rem;
+  }
+
+  header.masthead .masthead-heading {
+    font-size: 4.5rem;
+    font-weight: 700;
+    line-height: 4.5rem;
+    margin-bottom: 4rem;
+  }
+}
+
+/* TAG SECTION */
+.page-section {
+  padding: 6rem 0;
+}
+
+.page-section h2.section-heading {
+  font-size: 2.5rem;
+  margin-top: 0;
+  margin-bottom: 4rem;
+}
+
+.page-section h3.section-subheading {
+  font-size: 2rem;
+  font-weight: 400;
+  margin-bottom: 3rem;
+}
+
+@media (min-width: 768px) {
+  section {
+    padding: 9rem 0;
+  }
+}
+
+/* ABOUT */
+section#about {
+  background-image: url("/img/about-bg.png");
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  background-position: center;
+  background-size: cover;
+}
+
+/* FEATURES */
+section#features {
+  background-image: url("/img/features-bg.png");
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  background-position: center;
+  background-size: cover;
+}
+
+.color-yellow {
+  color: #0069d9;
+}
+
+.color-white {
+  color: #fff;
+}
+
+.features-content {
+  margin-left: 2em;
+}
+
+.timeline {
+  position: relative;
+  padding: 21px 0px 10px;
+  margin-top: 4px;
+  margin-bottom: 30px;
+}
+
+.timeline .line {
+  position: absolute;
+  width: 4px;
+  display: block;
+  background: #0069d9;
+  top: 34px;
+  bottom: 31px;
+}
+
+.timeline .separator {
+  border-top: 1px solid #0069d9;
+  padding: 5px;
+  padding-left: 40px;
+  font-style: italic;
+  font-size: .9em;
+  margin-left: 30px;
+}
+
+.timeline .line::before {
+  top: -4px;
+}
+
+.timeline .line::after {
+  bottom: -4px;
+}
+
+.timeline .line::before,
+.timeline .line::after {
+  content: '';
+  position: absolute;
+  left: -4px;
+  width: 12px;
+  height: 12px;
+  display: block;
+  border-radius: 50%;
+  background: #0069d9;
+}
+
+/* REQUIREMENTS */
+section#requirements {
+  background-image: url("/img/requirements-bg.png");
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  background-position: center;
+  background-size: cover;
+}
+
+/* SCORES */
+section#scores {
+  background-image: url("/img/scores-bg.png");
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  background-position: center;
+  background-size: cover;
+}
+
+.card {
+  background-color: transparent;
+}
+
+.scores-member {
+  margin-bottom: 3rem;
+  text-align: center;
+}
+
+.scores-member img {
+  width: 7rem;
+  height: 7rem;
+  border: 0.5rem solid rgba(175, 173, 173, 0.261);
+}
+
+.scores-member h4 {
+  margin-top: 1.5rem;
+  margin-bottom: 0;
+}
+
+/* Contact */
+section#contact img {
+  width: 60%;
+}
+
+/* FOOTER */
+.footer {
+  text-align: center;
+  font-size: 0.9rem;
+  font-family: "Montserrat", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+}
+
+.horizontal {
+  background-color: rgb(44, 44, 44);
+}
+
+
+/* -------------- PLAY GAME --------------- */
+
+.buttons {
+  width: 280px;
+  position: absolute;
+  top: 20%;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.bn {
+  width: 80px;
+  height: 80px;
+  margin: 5px;
+  border: 3px solid #00fa9a;
+  border-radius: 50%;
+  color: #00fa9a;
+  font-size: 40px;
+  background-color: white;
+  cursor: pointer;
+  outline: none;
+  transition: .3s;
+}
+
+.bn:hover {
+  background-color: #00fa9a;
+  border-color: white;
+  color: white;
+}
+
+#challenge {
+  position: absolute;
+  top: 43%;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 540px;
+  height: 40%;
+  display: none;
+}
+
+#you {
+  position: relative;
+  width: 37.5%;
+  font-size: 50px;
+}
+
+#com {
+  position: relative;
+  width: 37.5%;
+  font-size: 50px;
+}
+
+#YourObject {
+  position: absolute;
+  top: 45%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 110px;
+  height: 110px;
+  font-size: 50px;
+  padding-top: 10px;
+  border: 3px solid #00fa9a;
+  border-radius: 50%;
+  color: #00fa9a;
+  background-color: white;
+  box-sizing: border-box;
+  text-align: center;
+}
+
+#ComObject {
+  position: absolute;
+  top: 45%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 110px;
+  height: 110px;
+  font-size: 50px;
+  padding-top: 10px;
+  border: 3px solid #00fa9a;
+  border-radius: 50%;
+  color: #00fa9a;
+  background-color: white;
+  box-sizing: border-box;
+  text-align: center;
+}
+
+#result {
+  position: relative;
+  width: 25%;
+}
+
+#result p {
+  position: absolute;
+  top: 45%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  font-size: 30px;
+  width: 100%;
+  margin: 0;
+  text-align: center;
+}
+
+.who {
+  position: absolute;
+  bottom: 5%;
+  left: 50%;
+  transform: translateX(-50%);
+  color: white;
+  font-size: 30px;
+}

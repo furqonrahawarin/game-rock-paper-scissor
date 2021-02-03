@@ -1,0 +1,98 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <link rel="stylesheet" href="assets/css/bootstrap.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+
+    <!-- Font Awesome icons -->
+    <script src="https://use.fontawesome.com/releases/v5.15.1/js/all.js" crossorigin="anonymous"></script>
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Carter+One&family=Rubik:wght@400;500;800;900&display=swap"
+        rel="stylesheet">
+    <title>Game Play</title>
+</head>
+
+<body style="background-color: #9C835F;">
+
+    <nav>
+        <div class="container">
+            <div class="row">
+                <div class="col-12 mt-3 mb-3 text-center">
+                    <a href="play.html">
+                        <img width="50" height="50" src="img/refresh.png" alt="">
+                    </a>
+                    <h1>Refresh</h1>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <main>
+        <section class="p-3">
+            <div class="container">
+                <div class="row text-center">
+                    <div class="col-4 img-suit">
+                        <h1>PLAYER 1</h1>
+                        <div class="buttons mt-5">
+                            <button id="batu" class="bn" onclick="game(this.value)" value="batu">
+                                <img width="50" height="50" class="mr-auto ml-auto" src="img/batu.png" alt="">
+                            </button>
+                            <button id="kertas" class="bn" onclick="game(this.value)" value="kertas">
+                                <img width="50" height="50" class="mr-auto ml-auto" src="img/kertas.png" alt="">
+                            </button>
+                            <button id="gunting" class="bn" onclick="game(this.value)" value="gunting">
+                                <img width="50" height="50" class="mr-auto ml-auto" src="img/gunting.png" alt="">
+                            </button>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <h1>VS</h1>
+                    </div>
+                    <div class="col-md-4 img-suit">
+                        <h1>COMPUTER</h1>
+                        <div class="buttons mt-5">
+                            <button disabled id="com-batu" class="bn" onclick="game(this.value)" value="com-batu">
+                                <img width="50" height="50" class="mr-auto ml-auto" src="img/batu.png" alt="">
+                            </button>
+                            <button disabled id="com-kertas" class="bn" onclick="game(this.value)" value="com-kertas">
+                                <img width="50" height="50" class="mr-auto ml-auto" src="img/kertas.png" alt="">
+                            </button>
+                            <button disabled id="com-gunting" class="bn" onclick="game(this.value)" value="com-gunting">
+                                <img width="50" height="50" class="mr-auto ml-auto" src="img/gunting.png" alt="">
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section>
+            <div class="container">
+                <div class="row text-center">
+                    <div class="col-12">
+                        <div id="challenge">
+                            <div id="you">
+                                <div  class="m-auto" id="YourObject"></div>
+                            </div>
+                            <div id="result"><p id="who"><p></div>
+                            <div id="com">
+                                <div  class="m-auto" id="ComObject"></div>
+                                
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+
+    <script src="assets/js/main.js"></script>
+    <script src="assets/js/jquery.js"></script>
+    <script src="assets/js/bootstrap.js"></script>
+</body>
+
+</html>
